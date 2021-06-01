@@ -32,9 +32,13 @@
          <children>
             <TextField fx:id="textFieldId" editable="false" GridPane.columnIndex="1" />
             <TextField fx:id="textFieldName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="textFieldEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <DatePicker fx:id="dpBirthDate" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="textFieldBaseSalary" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="comboBoxDepartment" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <Label text="Name" GridPane.rowIndex="1" />
             <Label text="Id" />
-            <Label fx:id="errorLabel" textFill="#ee0808" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Label fx:id="errorLabelName" textFill="#ee0808" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
@@ -51,13 +55,18 @@
             <Label text="Birth Date" GridPane.rowIndex="3" />
             <Label text="Base Salary" GridPane.rowIndex="4" />
             <Label text="Department" GridPane.rowIndex="5" />
-            <TextField fx:id="textFieldEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField fx:id="textFieldBaseSalary" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <DatePicker fx:id="dpBirthDate" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label fx:id="errorEmail" textFill="#e50505" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Label fx:id="errorBirthDate" textFill="#eb0303" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Label fx:id="errorBaseSalary" textFill="#d00707" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <ComboBox fx:id="comboBoxDepartment" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="errorLabelEmail" textFill="#e50505" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label fx:id="errorLabelBirthDate" textFill="#eb0303" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
+            <Label fx:id="errorLabelBaseSalary" textFill="#d00707" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <padding>
+                  <Insets left="5.0" />
+               </padding></Label>
          </children>
       </GridPane>
    </children>
